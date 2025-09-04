@@ -14,8 +14,8 @@
     .buttons { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0 10px; }
     a.btn { padding:14px 18px; border-radius:12px; text-decoration:none; font-weight:600; display:inline-block; }
     .btn-android { background:#108a49; color:#fff; }
-    .btn-adhoc { background:#f3f4f6; color:#111; border:2px solid #e5e7eb; }
-    .btn-source { background:#111; color:#fff; }
+    .btn-apple { background:#111; color:#fff; }
+    .btn-source { background:#4b5563; color:#fff; }
     .note { color:#555; font-size:.95rem; margin-top:12px; }
   </style>
 </head>
@@ -28,27 +28,27 @@
       <h1>Install the Gianni’s Pizza App</h1>
       <p>Pick your platform below. The app opens <strong>GiannisItalianPizza.com</strong> for quick ordering.</p>
       <div class="buttons">
-        <!-- Android: ready-to-open Android Studio project (zip in repo root) -->
+        <!-- Android: Source project zip in repo root -->
         <a class="btn btn-source" href="GiannisAndroid_StudioProject.zip">⬇ Android — Source (Android Studio)</a>
 
-        <!-- Android: APK download (replace with your real Release asset URL once you build/sign) -->
-        <a class="btn btn-android"
-           href="https://github.com/giannispizza/appinstall/releases/download/v1.0.0/GiannisPizza.apk">
+        <!-- Android: APK (replace with your real Release asset URL) -->
+        <a class="btn btn-android" href="https://github.com/giannispizza/appinstall/releases/download/v1.0.0/GiannisPizza.apk">
           ▶ Android — Download APK
         </a>
 
-        <!-- iPhone: one-tap home-screen icon (using raw link so Safari prompts correctly) -->
-        <a class="btn btn-adhoc"
-           href="https://raw.githubusercontent.com/giannispizza/appinstall/main/GiannisPizza_WebClip.mobileconfig">
-           iPhone — Add to Home Screen (Profile)
+        <!-- iPhone: Web Clip profile as ZIP so Safari downloads properly -->
+        <a class="btn btn-apple"
+           href="https://raw.githubusercontent.com/giannispizza/appinstall/main/GiannisPizza_WebClip_MIN.zip">
+           iPhone — Add to Home Screen
         </a>
       </div>
       <div class="note">
-        • iPhone Web Clip adds a home-screen icon that opens your site full screen (no App Store).<br>
-        • For a true native iOS app installed via link, use Ad Hoc (needs Apple Developer + IPA + manifest).
+        iPhone steps: tap the button → Files opens → tap <em>GiannisPizza_WebClip.mobileconfig</em> → Install.<br>
+        If you prefer a native iOS app via link, we’ll switch to Ad Hoc (needs Apple Developer + IPA).
       </div>
     </div>
   </main>
 </body>
 </html>
+
 
