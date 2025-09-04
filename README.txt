@@ -1,13 +1,17 @@
-# Gianni’s Pizza — Starter Kit (Root Files)
+# Gianni’s Pizza — GitHub Files (Root + Android Studio Project)
 
-Put these files in the **root** of a public GitHub repo and enable **GitHub Pages** (Settings → Pages → Deploy from a branch → main / root).
+**Repo root** (for GitHub Pages at https://giannispizza.github.io/appinstall/):
+- index.html — landing page with 3 buttons (Android source, Android APK, iPhone Web Clip profile)
+- index_debug.html — quick link tester
+- logo.png — placeholder logo (replace with your brand)
+- GiannisPizza_WebClip.mobileconfig — iOS Web Clip profile (installs home-screen icon)
+- manifest.plist — kept for future Ad Hoc iOS (requires IPA + Apple Developer)
+- GiannisAndroid_StudioProject.zip — zipped Android Studio project (for direct download)
 
-Files:
-- index.html — landing page (Android APK + iOS Ad Hoc)
-- manifest.plist — OTA manifest (root IPA + root logo)
-- index_debug.html — test page to verify links
-- logo.png — placeholder (replace with your brand)
-- GiannisPizza.ipa — **you add this** (Ad Hoc export from Xcode)
+**Android Studio project folder** is also included at /GiannisAndroid_StudioProject (for a separate repo or local editing).
 
-Replace `YOUR-USERNAME` in all files with your GitHub username.
-If IPA > 100MB, host the IPA as a GitHub Release asset and put that asset URL in manifest.plist <url>.
+Next steps:
+1) Upload ALL files in this bundle to your repo root (public).
+2) Enable GitHub Pages (Settings → Pages → Deploy from a branch → main / root).
+3) Build/sign the Android APK using the Studio project; upload APK as a GitHub Release asset, then keep the Android button URL as-is (or update filename/version if different).
+4) For iPhone native install later, export an Ad Hoc IPA, upload as a Release asset, and update manifest.plist accordingly.
