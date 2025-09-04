@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Install Gianni’s Pizza App</title>
   <style>
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fdfdfd; color:#111; }
-    header { text-align:center; padding: 32px 16px 8px; }
+    body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:#fdfdfd; color:#111; }
+    header { text-align:center; padding:32px 16px 8px; }
     header img { max-width:720px; width:92%; height:auto; }
-    main { max-width: 840px; margin: 10px auto 40px; padding: 0 16px; }
+    main { max-width:840px; margin:10px auto 40px; padding:0 16px; }
     .card { background:#fff; border-radius:16px; padding:22px; box-shadow:0 12px 36px rgba(0,0,0,.15); }
     h1 { margin-top:0; }
     .buttons { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0 10px; }
@@ -20,7 +20,6 @@
 </head>
 <body>
   <header>
-    <!-- Put your real brand file at /logo.png -->
     <img src="logo.png" alt="Gianni’s Pizza logo">
   </header>
   <main>
@@ -28,20 +27,20 @@
       <h1>Install the Gianni’s Pizza App</h1>
       <p>This app opens <strong>GiannisItalianPizza.com</strong> for quick access.</p>
       <div class="buttons">
-        <!-- ANDROID: paste your GitHub Release asset URL for the APK -->
+        <!-- Android APK link (update with your release asset) -->
         <a class="btn btn-android"
-           href="https://github.com/YOUR-USERNAME/giannis-install/releases/download/v1.0.0/GiannisPizza.apk">
+           href="https://github.com/giannispizza/appinstall/releases/download/v1.0.0/GiannisPizza.apk">
           ▶ Android — Download APK
         </a>
-        <!-- iOS Ad Hoc: manifest must be hosted at your GitHub Pages URL -->
+        <!-- iOS Ad Hoc manifest link -->
         <a class="btn btn-adhoc"
-           href="itms-services://?action=download-manifest&url=https://YOUR-USERNAME.github.io/giannis-install/manifest.plist">
+           href="itms-services://?action=download-manifest&url=https://giannispizza.github.io/appinstall/manifest.plist">
           iOS — Direct Install (Ad Hoc)
         </a>
       </div>
       <div class="note">
         • Android may require enabling “Install unknown apps.”<br>
-        • iOS Ad Hoc only works for devices on your provisioning profile (max 100). Open this page in Safari.
+        • iOS Ad Hoc only works for devices added to your provisioning profile (max 100). Open this page in Safari.
       </div>
     </div>
   </main>
